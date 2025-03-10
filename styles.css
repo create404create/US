@@ -1,37 +1,55 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #e9ecef;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .container {
     text-align: center;
-    background-color: #fff;
-    padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    width: 300px;
+    background-color: #ffffff;
+    padding: 40px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
 }
 
 input[type="text"] {
-    width: 100%;
-    padding: 10px;
+    width: calc(100% - 20px);
+    padding: 12px;
     margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
 }
 
 button {
-    padding: 10px 15px;
+    padding: 12px 20px;
     background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -39,14 +57,35 @@ button:hover {
 }
 
 #result {
-    margin-top: 20px;
+    margin-top: 25px;
     display: none;
+    text-align: left;
 }
 
 pre {
-    text-align: left;
-    background-color: #f7f7f7;
-    padding: 10px;
-    border-radius: 4px;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 6px;
     font-size: 14px;
+    border: 1px solid #eee;
+    overflow-x: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input[type="text"] {
+        padding: 10px;
+    }
+
+    button {
+        padding: 10px 15px;
+    }
 }
