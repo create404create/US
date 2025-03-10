@@ -26,6 +26,12 @@ h1 {
     margin-bottom: 20px;
 }
 
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
 input[type="text"] {
     width: calc(100% - 20px);
     padding: 12px;
