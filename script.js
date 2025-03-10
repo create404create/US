@@ -1,6 +1,5 @@
 const apiUrls = [
     "https://api.uspeoplesearch.net/person/v3?x=",
-    "https://premium_lookup-1-h4761841.deta.app/person?x="
 ];
 
 async function checkDNCStatus() {
